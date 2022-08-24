@@ -27,7 +27,6 @@ public class Main {
 
         Asan asan = new Asan(1180111, 24, "Asan", animals1, techniques1);
 
-
         Cat cat2 = new Cat(16, 4, "Moyau", 3.45, true);
         Cat cat3 = new Cat(17, 4, "Mura", 3.45, true);
         Dog dog2 = new Dog(18, 7, "Rex", 7.0, true);
@@ -79,7 +78,6 @@ public class Main {
 
         Uson uson = new Uson(1180433, 23, "Uson", animals3, techniques3);
 
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Adamdyn atyn jazynyz: ");
         String names = scanner.nextLine();
@@ -103,7 +101,7 @@ public class Main {
         Bird bird99 = new Bird(103, 3, "Chymchyk", 2.11, false);
         Airplane airplane99 = new Airplane(105, 2020, "Samolet", "Model2020");
         Bayraktar bayraktar99 = new Bayraktar(107, 2019, "Ucak", "Model2019");
-        Tank tank = new Tank(108, 202, "Tanka", "Model2222");
+        Tank tank = new Tank(108, 2021, "Tanka", "Model2222");
         Sidan sidan = new Sidan(109, 2020, "Sidan", "Model2321");
         Helicopter helicopter99 = new Helicopter(110, 2020, "Vertolet", "Model213");
 
@@ -113,6 +111,7 @@ public class Main {
         Technique[] unflyTechniques = {sidan, tank};
 
         Animal[] obwiyAnimals = {whiteSwan99, bird99, eagle99, cat99, dog99};
+        Technique[] obwiyTechnique = {helicopter99, bayraktar99, airplane99, sidan, tank};
 
         Cat[] cats = new Cat[1];
         Dog[] dogs = new Dog[1];
@@ -137,28 +136,15 @@ public class Main {
         for (Animal i : flyAnimals) {
             System.out.println(i);
         }
-        System.out.println("---------------------FLY TECHNIQUES-------------------");
-        for (Technique i : flyTechniques) {
-            System.out.println(i);
-        }
-        System.out.println("---------------------UNFLY ANIMALS-------------------");
-        for (Animal i : unflyAnimals) {
-            System.out.println(i);
-        }
-        System.out.println("---------------------UNFLY TECHNIQUES-------------------");
-        for (Technique i : unflyTechniques) {
-            System.out.println(i);
-        }
     }
     public static void method3(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Iwtetkiniz kelgen metoddu tandanyz: ");
+        System.out.println("Vyberite nomer metoda kotorogo hotite zapustit: ");
         int number = scanner.nextInt();
         switch (number){
             case 1 -> method1();
             case 2 -> method2();
-            default -> System.out.println("Mynday metod jok");
+            default -> System.out.println("Mynday meyod jok");
         }
     }
-
 }
